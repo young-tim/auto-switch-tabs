@@ -1,0 +1,36 @@
+{
+	// 清单文件的版本，这个必须写，而且必须是2
+	"manifest_version": 2,
+	// 插件的名称
+	"name": "自动切换标签页-云客智慧",
+	// 插件的版本
+	"version": "1.0.0",
+	// 插件描述
+	"description": "定时自动切换浏览器标签页",
+	// 图标，一般偷懒全部用一个尺寸的也没问题
+	"icons":
+	{
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	},
+	// 浏览器右上角图标设置，browser_action、page_action、app必须三选一
+	"browser_action":
+	{
+		"default_icon": "img/icon.png",
+		"default_title": "自动切换标签页-云客智慧",
+		"default_popup": "popup.html"
+	},
+	// 权限申请
+	"permissions":
+	[
+		"tabs",
+		"declarativeContent",
+		"storage"
+	],
+	"homepage_url": "http://www.szykzh.com",
+	"background":
+	{
+		"scripts": ["js/background.js"]
+	}
+}
